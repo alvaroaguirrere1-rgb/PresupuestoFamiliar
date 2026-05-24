@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 
 const CATEGORIES = [
-  { id: "vivienda", label: "Vivienda", emoji: "ðŸ ", color: "#4f8ef7" },
-  { id: "comida", label: "Comida", emoji: "ðŸ½ï¸", color: "#f7874f" },
-  { id: "transporte", label: "Transporte", emoji: "ðŸš—", color: "#f7c84f" },
-  { id: "salud", label: "Salud", emoji: "ðŸ’Š", color: "#4ff7a0" },
-  { id: "entretenimiento", label: "Entretenimiento", emoji: "ðŸŽ¬", color: "#c44ff7" },
-  { id: "educacion", label: "EducaciÃ³n", emoji: "ðŸ“š", color: "#4ff7f0" },
-  { id: "ropa", label: "Ropa", emoji: "ðŸ‘•", color: "#f74f8e" },
-  { id: "otros", label: "Otros", emoji: "ðŸ“¦", color: "#a0a0a0" },
+  { id: "vivienda", label: "Vivienda", emoji: "Casa", color: "#4f8ef7" },
+  { id: "comida", label: "Comida", emoji: "Comida", color: "#f7874f" },
+  { id: "transporte", label: "Transporte", emoji: "Auto", color: "#f7c84f" },
+  { id: "salud", label: "Salud", emoji: "Salud", color: "#4ff7a0" },
+  { id: "entretenimiento", label: "Entretenimiento", emoji: "Ocio", color: "#c44ff7" },
+  { id: "educacion", label: "Educacion", emoji: "Edu", color: "#4ff7f0" },
+  { id: "ropa", label: "Ropa", emoji: "Ropa", color: "#f74f8e" },
+  { id: "otros", label: "Otros", emoji: "Otros", color: "#a0a0a0" },
 ];
 
 function formatCurrency(n) {
